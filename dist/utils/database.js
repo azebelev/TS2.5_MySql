@@ -13,5 +13,5 @@ const dbConfig = {
     port: 3306
 };
 exports.dbConfig = dbConfig;
-const db = mysql2_1.default.createConnection(dbConfig);
+const db = mysql2_1.default.createConnection(Object.assign(Object.assign({}, dbConfig), { multipleStatements: true }));
 exports.db = db;

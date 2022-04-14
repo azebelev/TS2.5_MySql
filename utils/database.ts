@@ -6,7 +6,7 @@ const dbConfig = {
   host: 'localhost',
   port: 3306
 };
-const db = mysql.createConnection(dbConfig);
+const db = mysql.createConnection({ ...dbConfig, multipleStatements: true });
 
 
 

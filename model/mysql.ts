@@ -2,7 +2,7 @@ import { db } from '../utils/database';
 import { VALUES } from '../interfaces/mysqlTypes';
 
 const CreateDb = async () => {
-    db.connect();
+
     const queryStringTodo = `CREATE TABLE IF NOT EXISTS tasks
     (id INT NOT NULL AUTO_INCREMENT,
     text VARCHAR(255) NOT NULL,

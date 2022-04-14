@@ -12,7 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Query = exports.CreateDb = void 0;
 const database_1 = require("../utils/database");
 const CreateDb = () => __awaiter(void 0, void 0, void 0, function* () {
-    database_1.db.connect();
     const queryStringTodo = `CREATE TABLE IF NOT EXISTS tasks
     (id INT NOT NULL AUTO_INCREMENT,
     text VARCHAR(255) NOT NULL,
